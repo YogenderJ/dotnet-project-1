@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "angular-security", "angular-security", "{655E6367-010F-4B54-93E6-8CBB51168CBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{351AF876-26C2-4DB8-A23E-8AD0994A732D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularSecurity.Api", "angular-security\src\AngularSecurity.Api\AngularSecurity.Api.csproj", "{5C106895-DA0A-461D-B8CB-21AC24F57111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C106895-DA0A-461D-B8CB-21AC24F57111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C106895-DA0A-461D-B8CB-21AC24F57111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C106895-DA0A-461D-B8CB-21AC24F57111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C106895-DA0A-461D-B8CB-21AC24F57111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{351AF876-26C2-4DB8-A23E-8AD0994A732D} = {655E6367-010F-4B54-93E6-8CBB51168CBD}
+		{5C106895-DA0A-461D-B8CB-21AC24F57111} = {351AF876-26C2-4DB8-A23E-8AD0994A732D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF36D920-0187-4B73-B16D-62F068A284DE}
+	EndGlobalSection
+EndGlobal
