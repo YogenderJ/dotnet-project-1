@@ -38,7 +38,7 @@ jobs:
       with:
    
         name: .Net-artifact
-        path: ${{ github.workspace }}/
+        path: ${{ github.workspace }}/out.zip
    
 #    - name: Deploy to EB
 #      uses: einaregilsson/beanstalk-deploy@v13
