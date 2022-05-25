@@ -32,14 +32,22 @@ jobs:
       run: |
         cd ${{ github.workspace }}/out 
         zip -r ${{ github.workspace }}/out.zip *
-    - name: Deploy to EB
-      uses: einaregilsson/beanstalk-deploy@v13
+        
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
       with:
-        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: demovideo
-        environment_name: demovideo-dev
-        region: us-east-2
-        version_label: ${{ github.run_id }}
-        version_description: ${{ github.sha }}
-        deployment_package: ${{ github.workspace }}/out.zip
+   
+        name: .Net-artifact
+        path: ${{ github.workspace }}/
+   
+#    - name: Deploy to EB
+#      uses: einaregilsson/beanstalk-deploy@v13
+#      with:
+#        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+ #       application_name: demovideo
+#        environment_name: demovideo-dev
+#        region: us-east-2
+#        version_label: ${{ github.run_id }}
+#        version_description: ${{ github.sha }}
+#        deployment_package: ${{ github.workspace }}/out.zip
